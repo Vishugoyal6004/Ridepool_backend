@@ -23,7 +23,7 @@ router.post('/',  async (req, res, next) => {
     try {
         const { body } = req;
 
-        const payload = new Product({
+        const payload = new Passenger({
             _id: new mongoose.Types.ObjectId(),
             origin: body.origin,
             destination: body.destination,
